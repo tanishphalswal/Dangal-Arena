@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dANGAL ARENA</title>
     <link rel="stylesheet" href="./assets/css/input.css" />
+
+    <!-- owl carousel  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
   </head>
   <body class="">
     <!-- nav bar -->
@@ -16,57 +26,77 @@
     </header>
 
     <!-- hero-section  -->
+
     <section class="main-section">
       <!--  -->
       <section class="players">
-        <!-- 1 -->
-        <div class="player">
-          <div class="img1 img">
-            <span>57KG</span>
-            <img src="./assets/img/aman.png" alt="" />
+        <div class="owl-carousel owl-theme" style="width: 100vw">
+          <!--  -->
+          <!-- 1 -->
+          <div class="item">
+            <div class="player">
+              <div class="img1 img">
+                <span>57KG</span>
+                <img src="./assets/img/aman.png" alt="" />
+              </div>
+              <span>AMAN</span>
+            </div>
           </div>
-          <span>AMAN</span>
-        </div>
-        <!-- 2 -->
-        <div class="player">
-          <div class="img1 img">
-            <span>50KG</span>
-            <img src="./assets/img/vinesh.png" alt="" />
+          <!-- 2 -->
+          <div class="item">
+            <div class="player">
+              <div class="img1 img">
+                <span>50KG</span>
+                <img src="./assets/img/vinesh.png" alt="" />
+              </div>
+              <span>VINESH</span>
+            </div>
           </div>
-          <span>VINESH</span>
-        </div>
-        <!-- 3 -->
-        <div class="player">
-          <div class="img1 img">
-            <span>53KG</span>
-            <img src="./assets/img/antim.png" alt="" />
+
+          <!-- 3 -->
+          <div class="item">
+            <div class="player">
+              <div class="img1 img">
+                <span>53KG</span>
+                <img src="./assets/img/antim.png" alt="" />
+              </div>
+              <span>ANTIM</span>
+            </div>
           </div>
-          <span>ANTIM</span>
-        </div>
-        <!-- 4 -->
-        <div class="player">
-          <div class="img1 img">
-            <span>57KG</span>
-            <img src="./assets/img/anshu.png" alt="" />
+
+          <!-- 4 -->
+          <div class="item">
+            <div class="player">
+              <div class="img1 img">
+                <span>57KG</span>
+                <img src="./assets/img/anshu.png" alt="" />
+              </div>
+              <span>ANSHU</span>
+            </div>
           </div>
-          <span>ANSHU</span>
-        </div>
-        <!-- 5 -->
-        <div class="player">
-          <div class="img1 img">
-            <span>68KG</span>
-            <img src="./assets/img/nisha.png" alt="" />
+
+          <!-- 5 -->
+          <div class="item">
+            <div class="player">
+              <div class="img1 img">
+                <span>68KG</span>
+                <img src="./assets/img/nisha.png" alt="" />
+              </div>
+              <span>NISHA</span>
+            </div>
           </div>
-          <span>NISHA</span>
+          <!-- 6 -->
+          <div class="item">
+            <div class="player">
+              <div class="img1 img">
+                <span>76KG</span>
+                <img src="./assets/img/reetika.png" alt="" />
+              </div>
+              <span>REETIKA</span>
+            </div>
+          </div>
         </div>
         <!--  -->
-        <div class="player">
-          <div class="img1 img">
-            <span>76KG</span>
-            <img src="./assets/img/reetika.png" alt="" />
-          </div>
-          <span>REETIKA</span>
-        </div>
       </section>
       <!--  -->
       <div class="heading">
@@ -74,6 +104,7 @@
         <h2>Best Wishes to Team India</h2>
       </div>
     </section>
+
     <!-- end hero-section  -->
 
     <!-- How WE ARE  -->
@@ -325,5 +356,26 @@
       <a href="Privacy_policy.html">Privacy Policy</a>
       <a href="term-conditon.html">T&C</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        // nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

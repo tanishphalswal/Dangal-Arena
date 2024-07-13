@@ -62,9 +62,13 @@ header nav a {
   color: white;
 }
 .main-section .players {
+  width: 100%;
+  /* background-color: orange; */
+
   display: flex;
   gap: 10px;
-  justify-content: space-around;
+  /* justify-content: center; */
+  overflow: hidden;
   flex-wrap: wrap;
 }
 .main-section .players .player > .img {
@@ -85,7 +89,8 @@ header nav a {
 }
 .main-section .players .player > Span {
   font-weight: 900;
-  width: 100%;
+  /* width: 100%; */
+  width: 205px;
   text-align: center;
   display: block;
   background-color: rgba(255, 255, 255, 0.283);
@@ -119,7 +124,8 @@ header nav a {
     padding: 10px 10px;
   }
   .main-section .players {
-    flex-direction: row;
+    /* flex-direction: row; */
+    /* margin-left: 50px; */
   }
   .main-section .heading h1 {
     font-size: 7vw;
