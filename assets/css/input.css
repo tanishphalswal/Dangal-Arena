@@ -762,7 +762,7 @@ footer a {
   color: rgba(253, 114, 28, 1);
 }
 
-.privacy a:nth-child(4) {
+.privacy a:nth-child(3) {
   color: rgba(253, 114, 28, 1);
 }
 
@@ -844,7 +844,6 @@ footer a {
   margin: 10px 10vw;
   line-height: 30px;
   word-spacing: 1px;
-  font-weight: 700;
 }
 .main-sec .main-sec-content > p {
   margin: 0 -30px;
@@ -855,6 +854,11 @@ footer a {
 
 .main-sec .main-sec-content ul {
   list-style-type: disc;
+}
+.main-sec .main-sec-content .h {
+  font-size: 18px;
+  color: #252579;
+  font-weight: 700;
 }
 
 @media (max-width: 1024px) {
