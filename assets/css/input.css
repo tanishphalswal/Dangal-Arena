@@ -184,16 +184,22 @@ header nav a {
 .feature-app {
   background-image: url("../img/Group.png");
   background-repeat: no-repeat;
-  height: 600px;
+  /* height: 600px; */
   background-size: cover;
   padding: 0px 3vw;
   height: auto;
+  /* background-color: black; */
 }
 .feature-app .features {
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
+.feature-app .features > .img img {
+  width: 45vw;
+}
+
 .feature-app .heading p {
   font-size: 18px;
   text-align: center;
@@ -201,14 +207,6 @@ header nav a {
   margin-top: -15px;
   width: 60%;
   opacity: 0.8;
-}
-
-.feature-app .features > img {
-  width: 60%;
-  position: absolute;
-  z-index: 0;
-  left: 220px;
-  bottom: -70px;
 }
 
 .feature-app .features .feature-cards .card {
@@ -240,21 +238,16 @@ header nav a {
 }
 
 /* meida query  */
-@media (max-width: 1300px) {
-  .feature-app .features > img {
-    width: 75%;
-    left: 140px;
-    bottom: -30px;
+
+@media (max-width: 1000px) {
+  .feature-app .features > .img img {
+    width: 80vw;
   }
-  /*  */
 }
 
 @media (max-width: 1050px) {
   .feature-app .features .feature-cards .card {
     margin: 30px 0;
-  }
-  .feature-app .features > img {
-    position: static;
   }
   .feature-app .features {
     align-items: center;
@@ -780,10 +773,15 @@ footer a {
 @media (max-width: 600px) {
   footer {
     gap: 10px;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   footer a {
     font-size: 12px;
+  }
+  @media (max-width: 400px) {
+    footer {
+      padding: 25px 20px;
+    }
   }
 }
 
