@@ -60,16 +60,14 @@ header nav a {
   background-position: center;
   color: white;
 }
-.main-section .players {
-  width: 100%;
-  /* background-color: orange; */
 
+.main-section .players .owl-carousel .item {
   display: flex;
-  gap: 10px;
-  /* justify-content: center; */
-  overflow: hidden;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 .main-section .players .player > .img {
   background-image: url("../img/border-player.png");
   width: fit-content;
@@ -88,7 +86,6 @@ header nav a {
 }
 .main-section .players .player > Span {
   font-weight: 900;
-  /* width: 100%; */
   width: 205px;
   text-align: center;
   display: block;
@@ -121,10 +118,6 @@ header nav a {
     flex-direction: column-reverse;
     gap: 10px;
     padding: 10px 10px;
-  }
-  .main-section .players {
-    /* flex-direction: row; */
-    /* margin-left: 50px; */
   }
   .main-section .heading h1 {
     font-size: 7vw;
@@ -194,7 +187,7 @@ header nav a {
   display: flex;
   justify-content: space-between;
   position: relative;
-  align-items: center;
+  /* align-items: center; */
 }
 .feature-app .features > .img img {
   width: 45vw;
@@ -224,14 +217,16 @@ header nav a {
   padding-top: 50px;
 }
 .feature-app .features .feature-cards .card .img {
-  /* padding: 25px; */
   border: 10px solid rgba(253, 114, 28, 1);
-  width: fit-content;
+  width: 70px;
   padding: 10px;
   border-radius: 50%;
   background: rgba(253, 114, 28, 1);
   position: absolute;
+  height: 70px;
   top: -30px;
+  display: grid;
+  place-content: center;
 }
 .feature-app .features .feature-cards .card .card-content p {
   opacity: 0.7;
@@ -706,7 +701,8 @@ header nav a {
 }
 @media (max-width: 680px) {
   .Download-app {
-    margin: 100px 10px;
+    margin: 0px 10px;
+    margin-top: 30px;
     padding: 10px;
     flex-direction: column-reverse;
     align-items: center;
