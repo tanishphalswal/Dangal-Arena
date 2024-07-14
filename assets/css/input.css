@@ -60,12 +60,19 @@ header nav a {
   background-position: center;
   color: white;
 }
-
-.main-section .players .owl-carousel .item {
+.owl-carousel {
+  width: 80%;
+}
+.owl-stage {
+  /* background-color: green; */
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
+  gap: 15px;
+}
+.main-section .players .owl-carousel .item .player {
+  width: fit-content;
+
+  margin: auto;
 }
 
 .main-section .players .player > .img {
@@ -77,16 +84,16 @@ header nav a {
   flex-direction: column;
   padding-top: 10px;
   padding-left: 5px;
-  object-fit: cover;
-  width: 201px;
+  width: 193px;
 }
 .main-section .players .player .img1 img {
-  width: 180px;
-  height: 225px;
+  width: 183px;
+  height: 200px;
 }
+
 .main-section .players .player > Span {
   font-weight: 900;
-  width: 205px;
+  width: 193px;
   text-align: center;
   display: block;
   background-color: rgba(255, 255, 255, 0.283);
